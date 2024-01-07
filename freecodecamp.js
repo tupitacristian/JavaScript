@@ -62,3 +62,59 @@ var lastName = "Lovelace";
 
 lastNameLength = lastName.length;
 console.log(lastNameLength);
+
+// Bracket Notation to Find First Character in String
+
+var firstLetterOfFirstName = "";
+var firstName = "Ada";
+
+firstLetterOfFirstName = firstName[0];
+
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+firstLetterOfLastName = lastName[1];
+console.log(firstLetterOfLastName);
+
+// String Immutability
+
+var myStr = "Jello World";
+
+myStr[0] = "H"; // incorect
+myStr = "Hello World";
+
+// Bracket Notation to Find Last Character in String
+
+var firstName = "Ada";
+var lastLetterOfFirstName = firstName[firstName.length - 1];
+
+var lastName = "Lovelace";
+var lastLetterOfLastName = lastName[lastName.length - 1];
+
+// WordBlanks
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb;
+
+    return result;
+}
+
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
+console.log(wordBlanks("bike", "slow", "flew", "slowly"));
+
+// Nested Arrays or a multidimensional array
+
+var ourArray = [["the universe", 42], ["everything", 101010]];
+var myArray = [["universul", 44], ["orice", 1010101]];
+
+// Access Array Data
+
+var ourArray = [50, 60, 70];
+var ourData = ourArray[2];
+console.log(ourData);
+
+var myArray = [50, 60, 70];
+var myData = myArray[0];
+console.log(myData);
+
