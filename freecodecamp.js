@@ -118,3 +118,58 @@ var myArray = [50, 60, 70];
 var myData = myArray[0];
 console.log(myData);
 
+// Modify Array Data
+
+var ourArray = [18, 64, 99];
+ourArray[1] = 35;
+
+var myArray = [ 13, 123, 45];
+myArray[0] = 78;
+console.log(myArray);
+
+//Access Multi-Dimensional Arrays with Indexes
+
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+
+var myData = myArray[2][1];
+console.log(myData);
+
+//Manipulate Arrays with push()
+
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.push(["happy", "joy"]);
+//ourArray now equals ["Stimpson", "J", "cat", ["happy","joy"]];
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["John", "Fernand", "Joseph"]);
+console.log(myArray);
+
+//Manipulate Arrays with pop()
+
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop();
+// removedFromOurArray now equals 3, and ourArray now equals [1,2]
+
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop();
+console.log(myArray);
+
+//Manipulate Arrays with shift()
+
+var ourArray = ["Stimpson","J",["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]]
+
+var myArray = [["Sim", "Cheers", "woow"], "Ceau", "Leam"];
+var removedFromMyArray = myArray.shift();
+console.log(myArray);
+
+//Manipulate Arrays with unshift()
+
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();
+ourArray.unshift("Happy");// ["Happy", "J", "cat"]
+
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift("Mere");
+console.log(myArray);
